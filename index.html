@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tory Adams Wears</title>
+  <link rel="stylesheet" href="/css/styles.project-fix.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  <div id="backToTop" onclick="backToTop()">↑</div>
+<script>
+window.addEventListener("scroll", () => {
+  const btn = document.getElementById("backToTop");
+  if (window.scrollY > 300) btn.style.display = "block";
+  else btn.style.display = "none";
+});
+function backToTop(){ window.scrollTo({top:0, behavior:"smooth"}); }
+</script>
+</body>
+</html>

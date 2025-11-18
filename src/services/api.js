@@ -6,7 +6,7 @@ const headers = {
   'x-rapidapi-host': ''
 };
 
-// API service for ecommerce app - using DummyJSON (https://dummyjson.com)
+// API service for ecommerce app - using DummyJSON ()
 const API_BASE = "";
 
 export async function fetchProducts(limit=100) {

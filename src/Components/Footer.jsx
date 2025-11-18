@@ -10,7 +10,7 @@
 import React from "react";
 import "../css/Footer.css";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer-container">
@@ -20,15 +20,15 @@ function Footer() {
         <div className="footer-info">
           <h2>Latest Deals & Offers</h2>
           <p>
-            <a href="#">Thursday, 13th Nov 2025</a><br />
+            <Link to="#">Thursday, 13th Nov 2025</Link><br />
             🔥 Black Friday Preview: Up to 60% off on electronics and fashion!
           </p>
           <p>
-            <a href="#">Wednesday, 12th Nov 2025</a><br />
+            <Link to="#">Wednesday, 12th Nov 2025</Link><br />
             New arrivals: Explore our 2025 Smart Home Collection.
           </p>
           <p>
-            <a href="#">Tuesday, 11th Nov 2025</a><br />
+            <Link to="#">Tuesday, 11th Nov 2025</Link><br />
             Special offer: Free shipping on all orders above ₦20,000.
           </p>
         </div>
@@ -38,15 +38,15 @@ function Footer() {
           <h2>Connect With Us</h2>
           <div className="social">
             <FaFacebookF className="social-icon" />
-            <p>Facebook <br /> <a href="#">+120,000 Fans</a></p>
+            <p>Facebook <br /> <Link target="_blank" rel="noopener noreferrer" to="https://web.facebook.com/" >+120,000 Fans</Link></p>
           </div>
           <div className="social">
             <FaTwitter className="social-icon" />
-            <p>Twitter <br /> <a href="#">+95,000 Followers</a></p>
+            <p>Twitter <br /> <Link target="_blank" rel="noopener noreferrer" to="https://x.com/">+95,000 Followers</Link></p>
           </div>
           <div className="social">
             <FaInstagram className="social-icon" />
-            <p>Instagram <br /> <a href="#">+150,000 Followers</a></p>
+            <p>Instagram <br /> <Link target="_blank" rel="noopener noreferrer" to="https://www.instagram.com/vicktory.ekpe">+150,000 Followers</Link></p>
           </div>
         </div>
 
@@ -54,13 +54,13 @@ function Footer() {
         <div className="footer-info">
           <h2>Customer Support</h2>
           <ul>
-            <li>Monday: <a href="#">9am - 8pm</a></li>
-            <li>Tuesday: <a href="#">9am - 8pm</a></li>
-            <li>Wednesday: <a href="#">9am - 8pm</a></li>
-            <li>Thursday: <a href="#">9am - 8pm</a></li>
-            <li>Friday: <a href="#">9am - 8pm</a></li>
-            <li>Saturday: <a href="#">10am - 6pm</a></li>
-            <li>Sunday: <a href="#">Closed</a></li>
+            <li>Monday: <Link to="#">9am - 8pm</Link></li>
+            <li>Tuesday: <Link to="#">9am - 8pm</Link></li>
+            <li>Wednesday: <Link to="#">9am - 8pm</Link></li>
+            <li>Thursday: <Link to="#">9am - 8pm</Link></li>
+            <li>Friday: <Link to="#">9am - 8pm</Link></li>
+            <li>Saturday: <Link to="#">10am - 6pm</Link></li>
+            <li>Sunday: <Link to="#">Closed</Link></li>
           </ul>
         </div>
 
@@ -73,11 +73,11 @@ function Footer() {
           </p>
           <p>
             <strong>Email:</strong><br />
-            <a href="mailto:support@shoply.ng">support@shoply.ng</a>
+            <a href="mailto:support@toryadams@gmail.com">support@toryadams@gmail.com</a>
           </p>
           <p>
             <strong>Phone:</strong><br />
-            +234 805 123 4567, +234 813 987 6543
+            +234 805 792 0012, +234 815 681 3973
           </p>
         </div>
 
@@ -85,7 +85,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; 2025 | Thank you for shopping with <strong>Shoply</strong> | Designed by <a href="#">Tory Adams Ekpe</a>
+          &copy; 2025 | Thank you for shopping with <strong>Tory Adams Wears</strong> | Designed by <a href="#">Tory Adams Ekpe 💚</a>
         </p>
       </div>
     </footer>

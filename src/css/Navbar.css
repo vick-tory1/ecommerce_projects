@@ -3,29 +3,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;                /* larger padding for height */
-  background: green !important;      /* lighter green like search button */
+  padding: 20px 30px;
   color: white;
+  background-image:url(../../public/pexels-enginakyurt-1487834.jpg) !important;
+  height: 100px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;                /* button-like style */
-}
+  }
 /* Brand link with lion icon styled like search button */
 .nav-brand .brand-link {
   display: flex;
   align-items: center;
   font-size: 22px;
   font-weight: bold;
-  color: white;
+  height: 60px;
+  color: rgb(113, 180, 172);
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 6px;                /* same as search button */
-  background: green !important;         /* match search button */
+    border-radius: 6px;                /* same as search button */
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  background: radial-gradient(circle, rgb(201, 73, 73), rgb(165, 116, 26), rgb(105, 105, 20), rgb(118, 189, 118), rgb(62, 62, 188), rgb(140, 69, 191), rgb(158, 87, 158)) !important;         /* slightly darker green on hover */
 }
 
 .nav-brand .brand-link:hover {
-  background: radial-gradient(circle, rgb(201, 73, 73), rgb(165, 116, 26), rgb(105, 105, 20), green, rgb(62, 62, 188), rgb(140, 69, 191), rgb(158, 87, 158)) !important;         /* slightly darker green on hover */
+  background-image: url(../../public/hover.jpg) !important;         /* match search button */
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
    color: rgb(132, 252, 208) !important;
   transform: scale(1.05);
 }
@@ -41,27 +47,42 @@
 .navbar-links {
   display: flex;
   flex-direction: row; /* ensure horizontal layout */
-  align-items: center;
-  gap: 20px;           /* spacing between each link */
+  font-size: 20px !important;
+  font-weight: bold;
+  align-items: center !important;
+  gap: 29px !important;           /* spacing between each link 
+  */
 }
 
 /* Navbar link buttons styled like brand link */
 .navbar-links .nav-link {
   display: flex;
-  align-items: center;
-  font-size: 18px;
   font-weight: bold;
-  color: white;
-  text-decoration: none;
-  padding: 10px 18px;
+  height: 50px;
+  width: 80px;
+  color: rgb(246, 250, 250) !important;    background-image: url(../../public/hover.jpg) !important;         /* match search button */
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  align-items: center;
+  padding: 5px 8px;
   border-radius: 6px;
-  background: green!important;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
+  transform: scale(1.2);
 }
-
+  
 .navbar-links .nav-link:hover {
-  background: radial-gradient(circle, rgb(201, 73, 73), rgb(165, 116, 26), rgb(105, 105, 20), green, rgb(62, 62, 188), rgb(140, 69, 191), rgb(158, 87, 158)) !important;         /* slightly darker green on hover */
+  color: rgb(185, 199, 198); 
+  text-align: center !important;
+  background-image: url(../../public/nav.png)!important;         /* match search button */
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+   color: rgb(132, 252, 208) !important;
   transform: scale(1.05);
 }
 
@@ -79,18 +100,10 @@
     align-items: center;
     padding: 15px 20px;
   }
-
-  .navbar-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 10px;
-  }
-
   .nav-button {
     flex: 1;
     justify-content: center;
+  background-image:url(../../public/nav.png) ;
   }
 
   .nav-brand .brand-link {
@@ -102,7 +115,7 @@
   } */
 /* Footer Container */
 .footer-container {
-background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475") !important;
+background-image:url(../../public/footer.jpg) !important;
   color: #fff;
   font-family: "Arial", sans-serif;
   padding: 3rem 2rem 1rem 2rem;
@@ -160,13 +173,7 @@ h1::after {
   to { transform: scaleX(1); }
 }
 
-/* Navbar link button green */
-nav a, .navbar a, .nav-link {
-  background: green !important;
-  color: white !important;
-  padding: 6px 10px;
-  border-radius: 4px;
-}
+
 
 #backToTop {
   position: fixed;
@@ -187,11 +194,7 @@ h1::after {
   width: 60% !important;
 }
 
-/* Navbar header+links green */
-nav, nav a, .navbar, .navbar a, .nav-link {
-  color: white !important;
-  background: green !important;
-}
+
 
 /* centered page header underline */
 .page-header {
@@ -235,7 +238,6 @@ h1::after {
     border-radius: 4px;
     animation: dropLine 0.6s ease-out forwards;
 }
-
 @keyframes dropLine {
     0% {
         transform: translateX(-50%) translateY(-10px);

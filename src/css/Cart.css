@@ -7,8 +7,29 @@ body { background: url('https://pagecreative.co.uk/reasons-ecommerce-website-is-
   font-size: 2rem;
   margin: 2rem;
   color: #555;
+  width: 320px;
+  height: 70px;
+  margin-left: 620px;
 }
-#cart-h1 { color: green !important; }
+.cart-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  line-height: 1.5rem;
+  justify-content: space-evenly;
+  transition: all ;
+}
+
+.cart-list > * {
+  flex: 0 0 calc(30% - 40px); /* 4 per row */
+  transition: 0.3s ;
+}
+
+#cart-h1 { color: green !important;
+text-align: center;
+margin-left: 500px;
+}
+
 .btn {
   background-color: #5ae36f;
   color: white;
@@ -57,10 +78,15 @@ body { background: url('https://pagecreative.co.uk/reasons-ecommerce-website-is-
 
 /* product image */
 .cart-item img {
-  width: 90px;
-  height: 90px;
+  width: 120px;          /* bigger image */
+  height: 120px;         /* bigger image */
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.25s ease;
+}
+
+.cart-item img:hover {
+  transform: scale(1.2);   /* nice zoom hover */
 }
 
 /* product title + price */
@@ -205,13 +231,6 @@ h1::after {
   to { transform: scaleX(1); }
 }
 
-/* Navbar link button green */
-nav a, .navbar a, .nav-link {
-  background: green !important;
-  color: white !important;
-  padding: 6px 10px;
-  border-radius: 4px;
-}
 
 #backToTop {
   position: fixed;
@@ -232,11 +251,6 @@ h1::after {
   width: 60% !important;
 }
 
-/* Navbar header+links green */
-nav, nav a, .navbar, .navbar a, .nav-link {
-  color: white !important;
-  background: green !important;
-}
 
 /* centered page header underline */
 .page-header {
@@ -339,4 +353,16 @@ h1::after {
     height: 4px;
     background: green;
     border-radius: 4px;
+}
+/* -------------------------------------- */
+/* CART ITEM HOVER EFFECT (only this page) */
+/* -------------------------------------- */
+.cart-item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+  background: #ffffff;
 }

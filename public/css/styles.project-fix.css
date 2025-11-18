@@ -97,7 +97,6 @@ button, .btn, .nav-link, .category-buttons button, .category-link, .category-lin
   padding: 6px 10px !important;
   font-size: 0.9rem !important;
   border-radius: 8px !important;
-  min-height: 34px !important;
   background: #5ae36f !important;
   color: #111 !important;
   border: none !important;
@@ -118,8 +117,7 @@ button, .btn, .nav-link, .category-buttons button, .category-link, .category-lin
 /* Make each category pill compact */
 .category-buttons button, .category-links a, .category-item {
   display: inline-block !important;
-  padding: 8px 10px !important;
-  font-size: 0.5rem !important;
+  font-size: 0.95rem !important;
   white-space: nowrap !important;
   text-transform: none !important;
   background: #5ae36f !important;
@@ -143,7 +141,6 @@ input, textarea, .form-control {
 [class*='bg-'], [class*='background-'], .card { background: transparent !important; }
 
 /* ensure product grid items centered */
-.product-grid .product-card { justify-self: center; }
 
 
 /* More compact category pills */
@@ -246,12 +243,6 @@ nav a, .navbar a, .nav-link {
 /* Longer underline */
 h1::after {
   width: 60% !important;
-}
-
-/* Navbar header+links green */
-nav, nav a, .navbar, .navbar a, .nav-link {
-  color: white !important;
-  background: green !important;
 }
 
 /* centered page header underline */

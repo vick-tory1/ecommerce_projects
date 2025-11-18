@@ -4,7 +4,7 @@ import "../css/Home.css";
 
 export default function Home(){
   return (
-    <div className="home" style={{padding:16}}>
+    <div className="home" style={{padding:16, marginTop:130}}>
       <h1>Welcome to Tory Adams Wears</h1>
       <p style={{marginTop:18}}>Your curated online boutique. Discover our latest arrivals and best sellers.</p>
       <div style={{marginTop:12}}>

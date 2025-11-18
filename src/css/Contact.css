@@ -180,13 +180,6 @@ h1::after {
   to { transform: scaleX(1); }
 }
 
-/* Navbar link button green */
-nav a, .navbar a, .nav-link {
-  background: green !important;
-  color: white !important;
-  padding: 6px 10px;
-  border-radius: 4px;
-}
 
 #backToTop {
   position: fixed;
@@ -207,11 +200,7 @@ h1::after {
   width: 60% !important;
 }
 
-/* Navbar header+links green */
-nav, nav a, .navbar, .navbar a, .nav-link {
-  color: white !important;
-  background: green !important;
-}
+
 
 /* centered page header underline */
 .page-header {

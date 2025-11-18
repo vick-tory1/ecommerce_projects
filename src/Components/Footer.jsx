@@ -85,7 +85,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; 2025 | Thank you for shopping with <strong>Shoply</strong> | Designed by <a href="#">Tory Adams Ekpe 🖤</a>
+          &copy; 2025 | Thank you for shopping with <strong>Shoply</strong> | Designed by <a href="#">Tory Adams Ekpe</a>
         </p>
       </div>
     </footer>

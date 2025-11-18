@@ -63,7 +63,7 @@ img {
 /* Description Text */
 .home p {
   font-size: 1.1rem;
-  color: #ccc;
+  color: #cccccc;
   max-width: 700px;
   margin: 0 auto 2rem auto;
   line-height: 1.6;
@@ -71,7 +71,7 @@ img {
 }
 
 .home p:hover {
-  color: #ffffff;
+  color: #549b89;
 }
 
 /* Buttons */
@@ -174,13 +174,6 @@ h1::after {
   to { transform: scaleX(1); }
 }
 
-/* Navbar link button green */
-nav a, .navbar a, .nav-link {
-  background: green !important;
-  color: white !important;
-  padding: 6px 10px;
-  border-radius: 4px;
-}
 
 #backToTop {
   position: fixed;
@@ -201,11 +194,6 @@ h1::after {
   width: 60% !important;
 }
 
-/* Navbar header+links green */
-nav, nav a, .navbar, .navbar a, .nav-link {
-  color: white !important;
-  background: green !important;
-}
 
 /* centered page header underline */
 .page-header {

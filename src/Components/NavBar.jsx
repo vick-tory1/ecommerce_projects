@@ -13,13 +13,13 @@ function NavBar() {
         </Link>
       </div>
       <div className="navbar-links">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/shop" className="nav-link">Shop</Link>
-        <Link to="/categories" className="nav-link">Categories</Link>
-        <Link to="/contact-us" className="nav-link">Contact Us</Link>
-        <Link to="/about-us" className="nav-link">About Us</Link>
-        <Link to="/cart" className="nav-link">
-        Cart { cartItems.length > 0 && (<span className="cart-count">{ cartItems.reduce((s,i)=>s + i.quantity,0)}</span>)}
+        <Link to="/" className="nav-link" style={{justifyContent:"center"}}>Home</Link>
+        <Link to="/shop" className="nav-link"  style={{justifyContent:"center"}}>Shop</Link>
+        <Link to="/categories" className="nav-link"  style={{justifyContent:"center"}}>Categories</Link>
+        <Link to="/contact-us" className="nav-link"  style={{justifyContent:"center"}}>Contact Us</Link>
+        <Link to="/about-us" className="nav-link"  style={{justifyContent:"center"}}>About Us</Link>
+        <Link to="/cart" className="nav-link"  style={{justifyContent:"center"}}>
+        Cart { cartItems.length > 0 && (<span className="cart-count">{ cartItems.reduce((s,i)=>  s + i.quantity , 0)}</span>)}
         </Link>
       </div>
     </nav>

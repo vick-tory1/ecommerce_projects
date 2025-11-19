@@ -68,10 +68,9 @@
   align-items: center;
   padding: 5px 8px;
   border-radius: 6px;
-  transition: all 0.2s ease-in-out;
   cursor: pointer;
   text-decoration: none;
-  transform: scale(1.2);
+  transition: all 0.05s ease-in-out;
 }
   
 .navbar-links .nav-link:hover {
@@ -82,8 +81,8 @@
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-   color: rgb(132, 252, 208) !important;
-  transform: scale(1.05);
+  color: rgb(132, 252, 208) !important;
+  transform: scale(1.2);
 }
 
 /* Heart icon inside favorite button if used */

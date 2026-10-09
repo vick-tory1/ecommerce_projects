@@ -32,7 +32,7 @@ export default function Contact(){
   }
 
   if(sent) return (
-    <div style={{padding:16}}>
+    <div className="contact-page" style={{padding:16}}>
       <h2>Thanks — we received your message!</h2>
       <p>We'll get back to you at {form.email || 'your email'} soon.</p>
       <button onClick={()=>setSent(false)}>Send another message</button>
@@ -40,10 +40,10 @@ export default function Contact(){
   );
 
   return (
-    <div style={{padding:16,textAlign: "center"}}>
+    <div className="contact-page" style={{padding:16,textAlign: "center"}}>
       <h1 style={{color: "green", fontSize: 55,textAlign: "center",marginBottom:12}}>Contact Us</h1>
       {error && <div style={{color:'red'}}>{error}</div>}
-      <form onSubmit={handleSubmit} style={{maxWidth:600, textAlign: "center", marginLeft:"300px"}}> 
+      <form onSubmit={handleSubmit} style={{maxWidth:600, textAlign: "center"}}> 
         <div style={{marginBottom:8, textAlign: "center"}}>
           <label style={{color: "green", fontSize: 25,textAlign: "center"}}>Name</label><br/>
           <input name="name" value={form.name} onChange={handleChange} style={{width:'100%', height: 25}} />

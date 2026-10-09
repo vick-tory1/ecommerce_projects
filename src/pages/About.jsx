@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About(){
   return (
-    <div style={{padding:16}}>
+    <div className="about-page" style={{padding:16}}>
       <h1 style={{color: "green", fontSize: 55,textAlign: "center", marginLeft: 320, marginBottom: 12}}>
         About Tory Adams Wears
       </h1>

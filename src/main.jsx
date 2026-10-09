@@ -7,6 +7,7 @@ import "./css/Home.css";
 import "./css/Navbar.css";
 import "./css/ProductCard.css";
 import "./css/Cart.css";
+import "./css/Responsive.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>

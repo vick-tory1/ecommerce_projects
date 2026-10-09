@@ -85,7 +85,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; 2025 | Thank you for shopping with <strong>Tory Adams Wears</strong> | Designed by <a href="#">Tory Adams Ekpe 💚</a>
+          &copy; 2025 | Thank you for shopping with <strong>Tory Adams Wears</strong> | Designed by <a href="#" title="Hi, I’m Adams Celestina Ekpe, (YHWH’s Chosen) a multidisciplinary technology professional, full-stack web developer with a front-end focus, certified graphic and multimedia designer, cybersecurity practitioner, and DevOps enthusiast. I specialize in building responsive, user-centered digital experiences using modern web technologies, API integrations, and deployment workflows. Passionate about AI, emerging technologies, cybersecurity, automation, and cloud infrastructure, I bridge creativity, engineering, and innovation to build intelligent digital solutions for the future." tabIndex={0}>Tory Adams Ekpe 💚</a>
         </p>
       </div>
     </footer>

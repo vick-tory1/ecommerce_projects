@@ -4,11 +4,11 @@ export default function About(){
   return (
     <div className="about-page" style={{padding:16}}>
       <h1 style={{color: "green", fontSize: 55,textAlign: "center", marginLeft: 320, marginBottom: 12}}>
-        About Tory Adams Wears
+        About Tory Adams Store
       </h1>
 
       <p style={{textAlign: "center", marginBottom: 8}}>
-        Tory Adams Wears is a curated online boutique offering a diverse selection of apparel and accessories.
+        Tory Adams Store is a curated online boutique offering a diverse selection of apparel and accessories.
         Our product catalog features high-quality fabrics, modern designs, and products sourced from ethical suppliers.
         As an ecommerce brand, we are committed to providing a seamless digital shopping experience, allowing customers
         to browse effortlessly through categories and discover items tailored to their personal style.

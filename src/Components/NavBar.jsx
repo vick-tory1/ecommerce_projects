@@ -11,7 +11,7 @@ function NavBar() {
     <nav className={`navbar${menuOpen ? " menu-open" : ""}`} aria-label="Main navigation">
       <div className="nav-brand">
         <Link to="/" className="brand-link">
-          🦁 Tory Adams Wears
+          🦁 Tory Adams Store
         </Link>
       </div>
       <button

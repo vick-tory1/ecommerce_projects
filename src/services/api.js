@@ -7,7 +7,7 @@ const headers = {
 };
 
 // API service for ecommerce app - using DummyJSON (https://dummyjson.com)
-const API_BASE = "";
+const API_BASE = "https://dummyjson.com";
 
 export async function fetchProducts(limit=100) {
   const res = await fetch(`${API_BASE}/products?limit=${limit}`);

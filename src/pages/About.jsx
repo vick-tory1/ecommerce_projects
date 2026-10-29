@@ -1,49 +1,86 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../css/About.css";
 
-export default function About(){
+const storeValues = [
+  {
+    number: "01",
+    title: "A wide product range",
+    description: "Explore beauty and fragrances, groceries, furniture, home and kitchen essentials, laptops, mobile accessories, footwear, and more.",
+  },
+  {
+    number: "02",
+    title: "Easy product discovery",
+    description: "Browse products by category, compare details, and find useful everyday items all in one convenient store.",
+  },
+  {
+    number: "03",
+    title: "Here when you need us",
+    description: "Our customer support team is ready to help with product questions, orders, delivery, and returns.",
+  },
+];
+
+export default function About() {
   return (
-    <div className="about-page" style={{padding:16}}>
-      <h1 style={{color: "green", fontSize: 55,textAlign: "center", marginLeft: 320, marginBottom: 12}}>
-        About Tory Adams Store
-      </h1>
+    <main className="about-page">
+      <section className="about-hero" aria-labelledby="about-title">
+        <p className="about-eyebrow">EVERYDAY FINDS, ALL IN ONE PLACE</p>
+        <h1 id="about-title">More of what you need, all in one place.</h1>
+        <p className="about-lead">
+          Tory Adams Store is your online superstore for carefully selected
+          products across beauty, groceries, home, electronics, footwear, and
+          more, with a convenient shopping experience from browse to checkout.
+        </p>
+        <Link className="about-cta" to="/categories">Explore categories <span aria-hidden="true">→</span></Link>
+        <div className="about-hero-accent" aria-hidden="true">
+          <span>TA</span>
+        </div>
+      </section>
 
-      <p style={{textAlign: "center", marginBottom: 8}}>
-        Tory Adams Store is a curated online boutique offering a diverse selection of apparel and accessories.
-        Our product catalog features high-quality fabrics, modern designs, and products sourced from ethical suppliers.
-        As an ecommerce brand, we are committed to providing a seamless digital shopping experience, allowing customers
-        to browse effortlessly through categories and discover items tailored to their personal style.
-        We aim to combine fashion with convenience by offering transparent pricing, reliable service, and a platform
-        designed to make online shopping smooth and enjoyable. With continuous updates to our catalog, customers can
-        always find something new, trendy, and affordable.
-      </p>
+      <section className="about-story" aria-labelledby="story-title">
+        <div>
+          <p className="about-eyebrow">OUR STORY</p>
+          <h2 id="story-title">A little bit of everything you need.</h2>
+        </div>
+        <div className="about-story-copy">
+          <p>
+            We bring useful finds together in one place, from beauty and
+            fragrances to groceries, furniture, home décor, and kitchen
+            accessories. You can also browse laptops, mobile accessories,
+            footwear, watches, and more.
+          </p>
+          <p>
+            Whether you are shopping for the home, everyday essentials, or
+            personal technology, clear product information and straightforward
+            categories make it easier to find what you are looking for.
+          </p>
+        </div>
+      </section>
 
-      <h2 style={{color: "green", fontSize: 55,textAlign: "center", marginLeft: 400, marginBottom: 8}}>
-        Our Products
-      </h2>
+      <section className="about-values" aria-labelledby="values-title">
+        <div className="about-section-heading">
+          <p className="about-eyebrow">THE TORY ADAMS DIFFERENCE</p>
+          <h2 id="values-title">Everything made easier to find.</h2>
+          <p>A convenient place to discover products for everyday life.</p>
+        </div>
+        <div className="about-value-grid">
+          {storeValues.map((value) => (
+            <article className="about-value-card" key={value.number}>
+              <span className="about-value-number">{value.number}</span>
+              <h3>{value.title}</h3>
+              <p>{value.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
-      <p style={{textAlign: "center",marginBottom: 8}}>
-        We carry categories ranging from casual wear to formal attire. Each product listing includes detailed descriptions,
-        multiple images, and honest pricing. We work to ensure every piece meets our standards for comfort and durability.
-        Our ecommerce platform uses high-resolution product images, size guides, and stock updates to help customers make
-        confident purchasing decisions. From trending collections to timeless essentials, every product is handpicked to
-        deliver style and long-lasting quality. We also offer frequent sales, bundle discounts, and exclusive online deals
-        that make premium fashion accessible to everyone.
-      </p>
-
-      <h2 style={{color: "green", fontSize: 55,textAlign: "center", marginLeft: 320, marginBottom: 8}}>
-        Why Shop With Us?
-      </h2>
-
-      <ul style={{listStyleType: "decimal", padding: 0,marginBottom: 8,marginLeft: 450}}>
-        <li>Quality-first selection process</li>
-        <li>Fast shipping and friendly returns</li>
-        <li>Secure checkout and responsive support</li>
-        <li>Wide variety of styles for men and women</li>
-        <li>Exclusive online deals and seasonal discounts</li>
-        <li>Trusted reviews and real customer feedback</li>
-        <li>Easy-to-navigate shopping experience</li>
-        <li>Regular new arrivals with updated fashion trends</li>
-      </ul>
-    </div>
-  )
+      <section className="about-bottom-cta">
+        <div>
+          <p className="about-eyebrow">YOUR NEXT FIND IS HERE</p>
+          <h2>Explore products for every part of your day.</h2>
+        </div>
+        <Link className="about-cta" to="/categories">Browse categories <span aria-hidden="true">→</span></Link>
+      </section>
+    </main>
+  );
 }

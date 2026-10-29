@@ -73,11 +73,11 @@ function Footer() {
           </p>
           <p>
             <strong>Email:</strong><br />
-            <a href="mailto:support@toryadams@gmail.com">support@toryadams@gmail.com</a>
+            <a href="mailto:ekpeadams@gmail.com">ekpeadams@gmail.com</a>
           </p>
           <p>
             <strong>Phone:</strong><br />
-            +234 805 792 0012, +234 815 681 3973
+            <a href="tel:+2349057920012">+2349057920012</a>
           </p>
         </div>
 
